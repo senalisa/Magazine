@@ -1,0 +1,180 @@
+header {
+    background-color: #4f56f1;
+    padding: 15px 0 15px 0;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+h4 {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 25px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+p {
+    font-family: "Raleway", sans-serif;
+}
+
+#city-field {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 10px 0px 20px;
+    width: 70vw;
+}
+
+#city-text {
+    margin: 0px 0 0 30px;
+    width: 50vw;
+}
+
+#barcelona {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.barcelonaPic {
+    margin: 0px;
+}
+
+#paris {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.parisPic {
+    margin: 0px;
+}
+
+#amsterdam, #istanbul, #newyork, #tokyo {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.amsterdamPic, .istanbulPic, .newyorkPic, .tokyoPic {
+    margin: 0px;
+}
+
+button, .dark-mode-toggle {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: lightgrey;
+    border: none;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.dark-mode-toggle-no {
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    color: black;
+    background-color: #c8caf1;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#city {
+    display: flex;
+}
+
+#city-info {
+    width: 22vw;
+    height: auto;
+    padding: 10px 20px 0 20px;
+    position: relative;
+    margin-top: 30px;
+    background-color: #c8caf1;
+}
+
+h8 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#barcelonaInfo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 20px 20px 20px;
+}
+
+#parisInfo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 20px 20px 20px;
+}
+
+#amsterdamInfo, #istanbulInfo, #newyorkInfo, #tokyoInfo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 20px 0 20px;
+}
+
+.infoClass {
+    display: none;
+}

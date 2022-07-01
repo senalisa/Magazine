@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Magazine!</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script type="text/javascript" src="js/main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!--HEADER-->
+<header>
+    <h1>City Magazine</h1>
+</header>
+
+<!--BODY-->
+<body>
+
+
+<div id="city-text">
+    <h4>The City Magazine!</h4>
+    <h3>Als je van plan bent om de meest epische reisbestemmingen in dit leven te ervaren, zorg er dan voor dat deze steden die je gezien moet hebben er tussen zitten. In deze magazine worden de coolste steden getoont met een korte informatie er over. Markeer je favoriete steden die je graag wilt bezoeken!</h3>
+</div>
+
+<div id="city">
+
+    <div id="city-field">
+
+        <!--Barcelona-->
+         <div id="barcelona">
+
+            <h2>Barcelona</h2>
+            <img class="barcelonaPic" src="img/barcelona.jpg" width="300" height="200">
+             <button data-target="barcelonaInfo"><span>Meer Informatie</span></button>
+             <button id="toggle-btn" class="dark-mode-toggle">Favorite</button>
+
+         </div>
+
+        <!--Paris-->
+        <div id="paris">
+
+            <h2>Paris</h2>
+            <img class="parisPic" src="img/paris.jpg" width="300" height="200">
+            <button data-target="parisInfo"><span>Meer Informatie</span></button>
+            <button class="like" onclick="like(this)"><i class="fa fa-thumbs-up"></i></button>
+
+        </div>
+
+        <!--Amsterdam-->
+        <div id="amsterdam">
+
+            <h2>Amsterdam</h2>
+            <img class="amsterdamPic" src="img/amsterdam.jpg" width="300" height="200">
+            <button data-target="amsterdamInfo"><span>Meer Informatie</span></button>
+
+        </div>
+
+        <!--Istanbul-->
+        <div id="istanbul">
+
+            <h2>Istanbul</h2>
+            <img class="istanbulPic" src="img/istanbul.jpg" width="300" height="200">
+            <button data-target="istanbulInfo"><span>Meer Informatie</span></button>
+
+        </div>
+
+        <!--New York-->
+        <div id="newyork">
+
+            <h2>New York</h2>
+            <img class="newyorkPic" src="img/newyork.jpg" width="300" height="200">
+            <button data-target="newyorkInfo"><span>Meer Informatie</span></button>
+
+        </div>
+
+        <!--Tokyo-->
+        <div id="tokyo">
+
+            <h2>Tokyo</h2>
+            <img class="tokyoPic" src="img/tokyo.jpg" width="300" height="200">
+            <button data-target="tokyoInfo"><span>Meer Informatie</span></button>
+
+        </div>
+
+        <!--BOOKMARK-->
+
+    </div>
+
+    <div id="city-info">
+
+        <h8>Meer informatie over de stad...</h8>
+
+        <!--Info BARCELONA-->
+        <div class="infoClass" id="barcelonaInfo">
+
+            <h5>Barcelona</h5>
+            <p>Barcelona is de bruisende culturele hoofdstad van Catalonië en de op twee na grootste stad van Spanje. Een stad die mede dankzij zijn gunstige ligging aan de Middellandse Zee, het gastvrije en vrolijke karakter van zijn inwoners, de prachtige architectuur en het overheerlijke gastronomische aanbod, veel mensen van over de hele wereld aanlokt. Niet voor niks wordt Barcelona vaak geprezen als één van de mooiste steden in Europa en wordt het door velen beschouwd als dé perfecte bestemming voor een stedentrip.</p>
+
+        </div>
+
+        <!--Info PARIS-->
+        <div class="infoClass" id="parisInfo">
+
+            <h5>Paris</h5>
+            <p>De stad van de liefde, de stad van de mode, de lichtstad … De hoofdstad van Frankrijk heeft een groot aantal bijnamen. Deze namen tonen meteen de populariteit en de veelzijdigheid van de Franse hoofdstad aan, want Parijs heeft vele prachtige gezichten. De geschiedenis van de stad gaat tot enkele duizenden jaren terug. Parijs ligt aan de Seine en heeft een unieke cultuur, veel musea en schitterende bezienswaardigheden. Dat Parijs een unieke stad is, daar kun je niet omheen als je door de stad wandelt</p>
+
+        </div>
+
+        <!--Info AMSTERDAM-->
+        <div class="infoClass" id="amsterdamInfo">
+
+            <h5>Amsterdam</h5>
+            <p>Amsterdam is de hoofdstad van Nederland. Echter heeft Amsterdam zo een eigen cultuur en gezicht dat veel Nederlanders de stad meer als een toeristische bestemming zien dan als een plek die lijkt op hun eigen leefomgeving. Dat komt vooral door de aanwezigheid van tienduizenden toeristen in de stad. Hierdoor is ook een groot deel van de binnenstad voor een groot deel gericht op het ontvangen, voeden en vermaken van toeristen. Wat Amsterdam natuurlijk ook onderscheidt van veel andere Nederlandse steden zijn de vele grachten met daaraan de prachtige grachtenpanden.</p>
+
+        </div>
+
+        <!--Info ISTANBUL-->
+        <div class="infoClass" id="istanbulInfo">
+
+            <h5>Istanbul</h5>
+            <p>stanboel of Istanbul is een stad in het Europese en Aziatische deel van Turkije en was de hoofdstad van het Ottomaanse Rijk. Daarvoor was ze onder de naam Constantinopel hoofdstad van het Byzantijnse Rijk. De stad is oorspronkelijk in 667 v.Chr. gesticht door Griekse kolonisten en werd door hen Byzantion genoemd. </p>
+
+        </div>
+
+        <!--Info NEWYORK-->
+        <div class="infoClass" id="newyorkInfo">
+
+            <h5>New York</h5>
+            <p>New York is de grootste stad van de Verenigde Staten van Amerika. Dankzij de leidinggevende en invloedrijke rol in handel, financiën, media, public relations, kunst, mode en educatie geldt zij als een van de belangrijkste wereldsteden.</p>
+
+        </div>
+
+        <!--Info TOKYO-->
+        <div class="infoClass" id="tokyoInfo">
+
+            <h5>Tokyo</h5>
+            <p>Tokio of Tokyo is een van de 47 prefecturen of provincies van Japan. De naam 東京 wordt bij transcriptie volgens het gangbare Hepburnsysteem meestal gespeld als Tōkyō en betekent letterlijk: "Oostelijke hoofdstad".</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+</body>
+
+</html>
