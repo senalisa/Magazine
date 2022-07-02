@@ -20,38 +20,38 @@ document.querySelectorAll("button[data-target]").forEach(el => {
     });
 });
 
-//Local Storage Favorite
-const toggleBtn = document.getElementById("toggle-btn");
-let darkMode = localStorage.getItem("dark-mode");
+//LOCAL STORAGE FAVORITE
+let changes = document.getElementsByClassName('changeColor')
+let boxes = document.getElementsByClassName('box').length;
 
-const enableDarkMode = () => {
-    toggleBtn.classList.remove("dark-mode-toggle");
-    toggleBtn.classList.add("dark-mode-toggle-no");
-    localStorage.setItem("dark-mode", "enabled");
-    console.log("favorited")
-};
+function save() {
+    for(let i = 1; i <= boxes; i++){
+        let checkbox = document.getElementById(String(i));
+        localStorage.setItem("checkbox" + String(i), checkbox.checked);
 
-const disableDarkMode = () => {
-    toggleBtn.classList.remove("dark-mode-toggle-no");
-    toggleBtn.classList.add("dark-mode-toggle");
-    localStorage.setItem("dark-mode", "disabled");
-    console.log("un-favorited")
-};
+        checkbox.oninput = function(){
+            //this is called when it changes
+            if(checkbox.checked){
+              //it is checked
+              console.log("checked");
 
-// set state of darkMode on page load
-if (darkMode === "enabled") {
-    enableDarkMode();
+            }else{
+              //it isn't checked
+              console.log("not");
+            }
+          }
+    }
 }
 
-toggleBtn.addEventListener("click", (e) => {
-    // update darkMode when clicked
-    darkMode = localStorage.getItem("dark-mode");
-    if (darkMode === "disabled") {
-        enableDarkMode();
-    } else {
-        disableDarkMode();
+//for loading
+for(let i = 1; i <= boxes; i++){
+    if(localStorage.length > 0){
+        let checked = JSON.parse(localStorage.getItem("checkbox" + String(i)));
+        document.getElementById(String(i)).checked = checked;
+        console.log("loaded favorites")
     }
-});
+}
+window.addEventListener('change', save);
 
 
 
